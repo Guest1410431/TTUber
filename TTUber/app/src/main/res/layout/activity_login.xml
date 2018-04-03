@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttuber_background"
+    tools:context="ttuber.com.ttuber.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="127dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@drawable/ttuber_logo" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="232dp"
+        android:background="#1000"
+        android:drawableLeft="@drawable/ttuber_username_icon"
+        android:ems="12"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp"
+        android:background="#1000"
+        android:drawableLeft="@drawable/ttuber_password_icon"
+        android:ems="12"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        app:cardBackgroundColor="#c70fff"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="279dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login_button"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="@string/register_here"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:text="@string/forgot_password"
+        android:textColor="#808080" />
+
+</RelativeLayout>

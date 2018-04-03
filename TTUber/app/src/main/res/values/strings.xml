@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TTUber</string>
+    <string name="username_hint"> Username</string>
+    <string name="password_hint"> Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_here">Register Here</string>
+    <string name="forgot_password">Forgot Password?</string>
+</resources>
