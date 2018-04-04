@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttuber_background"
+    tools:context="ttuber.com.ttuber.RegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ttuber_logo"
+        android:layout_width="127dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@drawable/ttuber_logo" />
+
+    <EditText
+        android:id="@+id/username_field"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="229dp"
+        android:background="@color/color_text_field_background"
+        android:drawableLeft="@drawable/ttuber_username_icon"
+        android:ems="12"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/t_number_field"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:background="@color/color_text_field_background"
+        android:drawableLeft="@drawable/ttuber_t_number_icon"
+        android:ems="12"
+        android:hint="@string/t_number"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/password_pass"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/username_field"
+        android:layout_marginBottom="175dp"
+        android:background="@color/color_text_field_background"
+        android:drawableLeft="@drawable/ttuber_password_icon"
+        android:ems="12"
+        android:hint="@string/password_hint_pass"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/password_again"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/username_field"
+        android:layout_alignTop="@+id/password_pass"
+        android:background="@color/color_text_field_background"
+        android:drawableLeft="@drawable/ttuber_password_again_icon"
+        android:ems="12"
+        android:hint="@string/password_hint_again"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="224dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@layout/rounded_button"
+        android:text="@string/register_button"
+        android:textColor="@color/color_text_white"
+        android:textSize="24dp" />
+
+</RelativeLayout>
